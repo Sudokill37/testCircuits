@@ -1,0 +1,10 @@
+.title Sample Circuit
+Vsource 1 0 DC 0V AC 1V SIN(0V 1V 1kHz 0s 0Hz)
+Resistor 1 2 1kOhm
+C1 2 3 5uF
+C2 3 0 5uF
+Resistor1 2 0 1MegOhm
+
+.tran 10us 1ms
+.end
+.plot tran 2
