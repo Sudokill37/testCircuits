@@ -10,7 +10,7 @@ count = 50
 circuit = Circuit('Sample Circuit')
 
 for i in range(count):
-    circuit.C(i, i+1, i+2, 5@u_fF)
+    circuit.C(i, i+1, i+2, 5@u_F)
     print(i)
 
 

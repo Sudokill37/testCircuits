@@ -8,3 +8,7 @@ C7 3 4 5f
 C8 3 5 657f
 C9 4 6 170f
 C10 5 6 421f
+Vsource 1 0 DC 0V AC 1V SIN(0V 1V 1kHz 0s 0Hz)
+.tran 10us 1ms
+.end
+.plot tran 4

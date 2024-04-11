@@ -12,8 +12,8 @@ from PySpice.Unit import *
 import networkx as nx
 import matplotlib.pyplot as plt
 
-m = 10
-n = math.floor(m/1.2)
+m = 5000
+n = math.floor(m/1.5)
 
 net = 'testCircuit' +str(m)+'.net'
 csv = 'testCircuit' +str(m)+'.csv'
@@ -27,7 +27,7 @@ for (node0, node1) in G.edges():
 
 with open(csv, 'w') as file:
     i = 1
-    file.write(",,,,,,,\n")
+    file.write(",,,,,,\n")
     for (node0, node1, attr) in G.edges(data=True):
         identifier = "C"+str(i)
         i+=1
